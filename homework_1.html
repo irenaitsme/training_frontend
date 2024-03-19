@@ -14,6 +14,17 @@ scale=1.0">
          font-size: 150%; /* Размер шрифта в процентах */ 
          font-family: serif;  
         }
+        tr, td {
+            border: 1px solid black; 
+        }
+        table {
+            border-collapse: collapse;
+        }
+        div {
+            padding: 5px; /* Поля вокруг текста */
+            margin-top: 2%; /* Отступ сверху */
+            margin-bottom: 2%; /* Отступ снизу */
+        }
     </style>
 </head>
 <body>
@@ -67,6 +78,162 @@ scale=1.0">
         <li>Второй</li>
         <li>Третий</li>
     </menu>
+
+    <div align="left"><font size="5" color=Aqua>Создание первой таблицы</font> 
+        <div>
+
+            <table width="800">
+        
+                <!-- tr - добавление строки, td - добавление ячейки в строку, colspan - объединение колонок  -->
+                <tr> 
+                    <th colspan="3" align="center" style="background: silver">
+                        <font size="5" color="green">
+                            Таблица 1
+                        </font>
+                    </th>     
+                </tr>
+        
+                <tr>
+                    <td>
+                        ФИО
+                    </td>
+        
+                    <td>
+                        Телефон
+                    </td>
+        
+                    <td>
+                        Адрес
+                    </td>
+                </tr>
+        
+                <tr>
+                    <td>
+                        Иванов Иван Иванович
+                    </td>
+        
+                    <td>
+                        79999999999
+                    </td>
+        
+                    <td>
+                        СПб, ул. Иванова, д. 1, кв. 2
+                    </td>
+                </tr>
+        
+                <tr>
+                    <td>
+                        Петров Петр Петрович
+                    </td>
+        
+                    <td>
+                        78888888888
+                    </td>
+        
+                    <td>
+                        СПб, ул. Петрова, д. 2, кв. 3
+                    </td>
+                </tr>
+        
+                <tr>
+                    <td>
+                        Сидоров Сидор Сидорович
+                    </td>
+        
+                    <td>
+                        76666666666
+                    </td>
+        
+                    <td>
+                        СПб, ул. Сидорова, д. 3, кв. 4
+                    </td>
+                </tr>
+        
+            </table>
+            
+        </div>
+
+    </div>
+
+    <div align="center"><font size="5" color=BlueViolet>Создание второй таблицы</font>
+        <div>
+
+            <table width=60%>
+                <thead align="center">
+                    <tr>
+                        <td colspan="3">Одна ячейка на три столбца в THEAD</td>
+                    </tr>                    
+                </thead>
+                <tfoot align="left" style="background: #3365ee">
+                    <tr>
+                        <td colspan="3">Одна ячейка на три столбца в TFOOT</td>
+                    </tr> 
+                </tfoot>
+                
+                <tbody align="right">
+                    <tr>
+                        <td style="background: gold">Ячейка 1.1 в TBODY</td>
+                        <td style="background: red">Ячейка 1.2 в TBODY</td> 
+                        <td style="background: greenyellow">Ячейка 1.3 в TBODY</td> 
+                    </tr>  
+
+                    <tr>
+                        <td style="background: greenyellow">Ячейка 2.1 в TBODY</td>
+                        <td style="background: gold">Ячейка 2.2 в TBODY</td> 
+                        <td style="background: red">Ячейка 2.3 в TBODY</td> 
+                    </tr> 
+
+                    <tr>
+                        <td style="background: red">Ячейка 3.1 в TBODY</td>
+                        <td style="background: greenyellow">Ячейка 3.2 в TBODY</td> 
+                        <td style="background: gold">Ячейка 3.3 в TBODY</td> 
+                    </tr> 
+
+                </tbody>
+        
+            </table>
+
+        </div>
+    </div>
+
+    <div align="right"><font size="5" color=Navy>Создание третьей таблицы</font>
+        <div>
+            <table width=45%>
+                <thead align="center">
+                    <tr>
+                        <td colspan="3">Одна ячейка на три столбца в THEAD</td>
+                    </tr>                    
+                </thead>
+                <tfoot align="center" style="background: hsl(226, 74%, 5%)">
+                    <tr>
+                        <td colspan="3" style="color: aliceblue;">Одна ячейка на три столбца в TFOOT</td>
+                    </tr> 
+                </tfoot>
+                
+                <tbody align="center">
+                    <tr>
+                        <td  rowspan="3">Одна ячейка на три строки в TBODY</td>
+                        <td>Ячейка 1.2 в TBODY</td> 
+                        <td>Ячейка 1.3 в TBODY</td> 
+                    </tr>  
+
+                    <tr>
+                        <td>Ячейка 2.2 в TBODY</td> 
+                        <td>Ячейка 2.3 в TBODY</td> 
+                    </tr> 
+
+                    <tr>
+                        <td>Ячейка 3.2 в TBODY</td> 
+                        <td>Ячейка 3.3 в TBODY</td> 
+                    </tr> 
+
+                </tbody>
+        
+            </table>
+        </div>
+
+    </div>
+    
 
 </body>
 </html>
