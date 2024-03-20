@@ -1,239 +1,272 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-
-scale=1.0">
-    <title>Homework 1.1</title>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Homework 1.1</title>
+    </head>
+    <body>
+        
+        <h1>Заголовок 1</h1>
+        <h2>Заголовок 2</h2>
+        <h3>Заголовок 3</h3>
+        <h4>Заголовок 4</h4>
+        <h5>Заголовок 5</h5>
+        <h6>Заголовок 6</h6>
+
+        <p><span class="word">Пример</span> формирования контейнера</p>
+        <!-- Контейнер div -->
+        <div class="nav-bar">
+            <ul>
+            <li><a href="###">Пункт1</a></li>
+            <li><a href="###">Пункт2</a></li>
+            <li><a href="###">Пункт2</a></li>
+            </ul>
+        </div>
+
+        <div class="header">
+            <h2>Что-то про весну</h2>
+            <h3>Описание</h3>
+        </div>
+        <div>Выбежал на опушку заяц-беляк; присел на пенёк, огляделся. Ушки на макушке у робкого зайца. Смотрит заяц-беляк: вышел на опушку леса огромный лось с бородою. Остановился, слушает лось... А в глухом лесу вывела медведица родившихся в берлоге маленьких медвежат на первую прогулку. Ещё не видели медвежата весны, не знают большого тёмного леса. Не знают, чем пахнет пробудившаяся земля. На поляне, у лесного разлившегося ручейка, весело играют смешные, неуклюжие медвежата. Со страхом заглядывают в холодную бегучую воду, взбираются на пни и оттаявшие на солнце старые коряги... Стройными косяками летят, тянутся с юга гуси; показались первые журавли. </div>
+    
+        <p><strong><font size="10" color="BlueViolet" face="Arial">М</font>аркированный список</strong></p>
+        <!-- Маркированный список ul -->
+        <ul>
+            <li>Первый</li>
+            <li>Второй</li>
+            <li>Третий</li>
+        </ul>
+
+        <p><em><font size="5" color="SpringGreen" face="Arial">Н</font>умерованный список</em></p>
+        <!-- Нумерованный список ol -->
+        <ol>
+            <li>Первый</li>
+            <li>Второй</li>
+            <li>Третий</li>
+        </ol>
+
+        <p><mark>Список с помощью menu</mark></p>
+        <!-- Список с помощью menu -->
+        <menu>
+            <li>Первый</li>
+            <li>Второй</li>
+            <li>Третий</li>
+        </menu>
+
+        <div align="left"><font size="5" color=Aqua>Создание первой таблицы</font> 
+            <div>
+                <table width="800" class="fio_table">
+            
+                    <!-- tr - добавление строки, td - добавление ячейки в строку, colspan - объединение колонок  -->
+                    <tr> 
+                        <caption>
+                            <font size="5" color=#0000FF>
+                                Таблица 1
+                            </font>
+                        </caption>   
+                    </tr>
+            
+                    <tr>
+                        <th>ФИО</th>
+                        <th>Телефон</th>
+                        <th>Адрес</th>
+                    </tr>
+            
+                    <tr>
+                        <td>Иванов Иван Иванович</td>
+                        <td>79999999999</td>
+                        <td>СПб, ул. Иванова, д. 1, кв. 2</td>
+                    </tr>
+            
+                    <tr>
+                        <td>Петров Петр Петрович</td>
+                        <td>78888888888</td>
+                        <td>СПб, ул. Петрова, д. 2, кв. 3</td>
+                    </tr>
+            
+                    <tr>
+                        <td>Сидоров Сидор Сидорович</td>
+                        <td>76666666666</td>
+                        <td>СПб, ул. Сидорова, д. 3, кв. 4</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div align="center"><font size="5" color=BlueViolet>Создание второй таблицы</font>
+            <div>
+                <table style="height: 300px; width: 60% ">
+                    <caption>
+                        <font size="5" color=#FF00FF>
+                            Таблица 2
+                        </font>
+                    </caption> 
+                    <thead>
+                        <tr>
+                            <td colspan="3">Одна ячейка на три столбца в THEAD</td>
+                        </tr>                    
+                    </thead>
+                    <tfoot align="right">
+                        <tr>
+                            <td colspan="3">Одна ячейка на три столбца в TFOOT</td>
+                        </tr> 
+                    </tfoot>
+                    
+                    <tbody align="center">
+                        <tr>
+                            <td class="cell_yellow">Ячейка 1.1 в TBODY</td>
+                            <td class="cell_red">Ячейка 1.2 в TBODY</td> 
+                            <td class="cell_green">Ячейка 1.3 в TBODY</td> 
+                        </tr>  
+
+                        <tr>
+                            <td class="cell_green">Ячейка 2.1 в TBODY</td>
+                            <td class="cell_yellow">Ячейка 2.2 в TBODY</td> 
+                            <td class="cell_red">Ячейка 2.3 в TBODY</td> 
+                        </tr> 
+
+                        <tr>
+                            <td class="cell_red">Ячейка 3.1 в TBODY</td>
+                            <td class="cell_green">Ячейка 3.2 в TBODY</td> 
+                            <td class="cell_yellow">Ячейка 3.3 в TBODY</td> 
+                        </tr> 
+
+                    </tbody>
+            
+                </table>
+
+            </div>
+        </div>
+
+        <div style="margin-left: 70%; margin-top: 30px; margin-bottom: 50px;">
+            <font size="5" color="#000080">Создание третьей таблицы</font>
+            <div>
+                <table class="align_center_table">
+                    <caption>
+                        <font size="5" color="#FF4500">
+                            Таблица 3
+                        </font>
+                    </caption>
+                    <thead>
+                        <tr>
+                            <td colspan="3">Одна ячейка на три столбца в THEAD</td>
+                        </tr>                    
+                    </thead>
+                    <tfoot>
+                        <tr>
+                            <td colspan="3">Одна ячейка на три столбца в TFOOT</td>
+                        </tr> 
+                    </tfoot>
+                    
+                    <tbody>
+                        <tr>
+                            <td rowspan="3">Одна ячейка на три строки в TBODY</td>
+                            <td>Ячейка 1.1 в TBODY</td> 
+                            <td>Ячейка 1.2 в TBODY</td> 
+                        </tr>  
+
+                        <tr>
+                            <td colspan="2">Одна ячейка на 2 столбца в TBODY</td> 
+                        </tr> 
+
+                        <tr>
+                            <td>Ячейка 3.2 в TBODY</td> 
+                            <td>Ячейка 3.3 в TBODY</td> 
+                        </tr> 
+                    </tbody>       
+                </table>
+            </div>
+        </div>
+        <div align="center"><font size="4" color="red" >Вставка изображений</font>
+            <table style="width: 50%; text-align: center; margin-top: 10px;">
+                <tr>
+                    <th>Изображение</th>
+                    <th>Комментарий</th>
+                    <th>Примечание</th>
+                </tr>
+                <tr>
+                    <td><img src="./image/cat1.jpeg" alt="Это котя с бабочкой"  class="cell_cat1"></td>
+                    <td>Котя с бабочкой формат 300px x 300px</td>
+                    <td>Примечание 1</td>
+                </tr>
+                <tr>
+                    <td style="background-color: black;"><img src="./image/cat2.jpeg" alt="Мечтательный котя" class="cell_cat2"></td>
+                    <td>Мечтательный котя 150px x 150px</td>
+                    <td>Примечание 2</td>
+                </tr>
+                <tr>
+                    <td><img src="./image/cat4.jpeg" alt="Пушистый кот лежит на стуле" class="cell_cat3"></td>
+                    <td>Пушистый кот лежит на стуле 400px x 200px</td>
+                    <td>Примечание 3</td>
+                </tr>
+            </table>
+        </div>   
+    </body>
     <style>
         body { 
-         font-family: Tahoma, sans-serif;
+        font-family: Tahoma, sans-serif;
         }
         .word { 
-         color: red; /* Красный цвет шрифта */ 
-         font-size: 150%; /* Размер шрифта в процентах */ 
-         font-family: serif;  
+            color: red; /* Красный цвет шрифта */ 
+            font-size: 150%; /* Размер шрифта в процентах */ 
+            font-family: serif;  
         }
-        tr, td {
+        th, tr, td {
             border: 1px solid black; 
         }
         table {
             border-collapse: collapse;
         }
-        div {
+        .fio_table {
             padding: 5px; /* Поля вокруг текста */
-            margin-top: 2%; /* Отступ сверху */
-            margin-bottom: 2%; /* Отступ снизу */
+            margin-bottom: 2%;
+        }
+        .cell_red {
+            background-color: #ff0000c7; /* Красный цвет шрифта */ 
+            font-size: 90%; /* Размер шрифта в процентах */ 
+            font-family: 'Times New Roman', Times, serif; /* Шрифт */
+            vertical-align: top; 
+        }
+        .cell_yellow {
+            background-color: #eaff00; /* желтый цвет шрифта */ 
+            font-size: 70%; /* Размер шрифта в процентах */ 
+            font-family:'Times New Roman', Times, serif; /* Шрифт */ 
+            vertical-align: middle;
+        }
+        .cell_green {
+            background-color:chartreuse; /* зеленый цвет шрифта */ 
+            font-size: 50%; /* Размер шрифта в процентах */ 
+            font-family:'Times New Roman', Times, serif; /* Шрифт */ 
+            vertical-align: bottom;
+        }
+        .cell_blue {
+            align-content: center;
+            background: #3365ee;
+        }
+        .align_center_table {
+            width: 400;
+            text-align:center;
+            margin-right: 5em;
+        }
+        .cell_cat1 {
+            width: 300px; 
+            border-top-left-radius: 10%; 
+            border-bottom-right-radius: 10%;
+            vertical-align: middle;
+        }
+        .cell_cat2 {
+            width: 150px; 
+            border-radius: 50%;
+            vertical-align: middle;
+        }
+        .cell_cat3 {
+            width: 400px; 
+            height: 200px; 
+            border-color: blueviolet; 
+            vertical-align: middle;
+            border-style: solid;
+            border-width: 10px;
         }
     </style>
-</head>
-<body>
-    
-    <h1>Заголовок 1</h1>
-    <h2>Заголовок 2</h2>
-    <h3>Заголовок 3</h3>
-    <h4>Заголовок 4</h4>
-    <h5>Заголовок 5</h5>
-    <h6>Заголовок 6</h6>
-
-    <p><span class="word">Пример</span> формирования контейнера</p>
-    <!-- Контейнер div -->
-    <div class="nav-bar">
-        <ul>
-          <li><a href="###">Пункт1</a></li>
-          <li><a href="###">Пункт2</a></li>
-          <li><a href="###">Пункт2</a></li>
-        </ul>
-    </div>
-
-    <div class="header">
-        <h2>Что-то про весну</h2>
-        <h3>Описание</h3>
-    </div>
-    <div>Выбежал на опушку заяц-беляк; присел на пенёк, огляделся. Ушки на макушке у робкого зайца. Смотрит заяц-беляк: вышел на опушку леса огромный лось с бородою. Остановился, слушает лось... А в глухом лесу вывела медведица родившихся в берлоге маленьких медвежат на первую прогулку. Ещё не видели медвежата весны, не знают большого тёмного леса. Не знают, чем пахнет пробудившаяся земля. На поляне, у лесного разлившегося ручейка, весело играют смешные, неуклюжие медвежата. Со страхом заглядывают в холодную бегучую воду, взбираются на пни и оттаявшие на солнце старые коряги... Стройными косяками летят, тянутся с юга гуси; показались первые журавли. </div>
-   
-    <p><strong><font size="10" color="BlueViolet" face="Arial">М</font>аркированный список</strong></p>
-
-    <!-- Маркированный список ul -->
-    <ul>
-        <li>Первый</li>
-        <li>Второй</li>
-        <li>Третий</li>
-    </ul>
-
-    <p><em><font size="5" color="SpringGreen" face="Arial">Н</font>умерованный список</em></p>
-
-    <!-- Нумерованный список ol -->
-    <ol>
-        <li>Первый</li>
-        <li>Второй</li>
-        <li>Третий</li>
-    </ol>
-
-    <p><mark>Список с помощью menu</mark></p>
-
-    <!-- Список с помощью menu -->
-    <menu>
-        <li>Первый</li>
-        <li>Второй</li>
-        <li>Третий</li>
-    </menu>
-
-    <div align="left"><font size="5" color=Aqua>Создание первой таблицы</font> 
-        <div>
-
-            <table width="800">
-        
-                <!-- tr - добавление строки, td - добавление ячейки в строку, colspan - объединение колонок  -->
-                <tr> 
-                    <th colspan="3" align="center" style="background: silver">
-                        <font size="5" color="green">
-                            Таблица 1
-                        </font>
-                    </th>     
-                </tr>
-        
-                <tr>
-                    <td>
-                        ФИО
-                    </td>
-        
-                    <td>
-                        Телефон
-                    </td>
-        
-                    <td>
-                        Адрес
-                    </td>
-                </tr>
-        
-                <tr>
-                    <td>
-                        Иванов Иван Иванович
-                    </td>
-        
-                    <td>
-                        79999999999
-                    </td>
-        
-                    <td>
-                        СПб, ул. Иванова, д. 1, кв. 2
-                    </td>
-                </tr>
-        
-                <tr>
-                    <td>
-                        Петров Петр Петрович
-                    </td>
-        
-                    <td>
-                        78888888888
-                    </td>
-        
-                    <td>
-                        СПб, ул. Петрова, д. 2, кв. 3
-                    </td>
-                </tr>
-        
-                <tr>
-                    <td>
-                        Сидоров Сидор Сидорович
-                    </td>
-        
-                    <td>
-                        76666666666
-                    </td>
-        
-                    <td>
-                        СПб, ул. Сидорова, д. 3, кв. 4
-                    </td>
-                </tr>
-        
-            </table>
-            
-        </div>
-
-    </div>
-
-    <div align="center"><font size="5" color=BlueViolet>Создание второй таблицы</font>
-        <div>
-
-            <table width=60%>
-                <thead align="center">
-                    <tr>
-                        <td colspan="3">Одна ячейка на три столбца в THEAD</td>
-                    </tr>                    
-                </thead>
-                <tfoot align="left" style="background: #3365ee">
-                    <tr>
-                        <td colspan="3">Одна ячейка на три столбца в TFOOT</td>
-                    </tr> 
-                </tfoot>
-                
-                <tbody align="right">
-                    <tr>
-                        <td style="background: gold">Ячейка 1.1 в TBODY</td>
-                        <td style="background: red">Ячейка 1.2 в TBODY</td> 
-                        <td style="background: greenyellow">Ячейка 1.3 в TBODY</td> 
-                    </tr>  
-
-                    <tr>
-                        <td style="background: greenyellow">Ячейка 2.1 в TBODY</td>
-                        <td style="background: gold">Ячейка 2.2 в TBODY</td> 
-                        <td style="background: red">Ячейка 2.3 в TBODY</td> 
-                    </tr> 
-
-                    <tr>
-                        <td style="background: red">Ячейка 3.1 в TBODY</td>
-                        <td style="background: greenyellow">Ячейка 3.2 в TBODY</td> 
-                        <td style="background: gold">Ячейка 3.3 в TBODY</td> 
-                    </tr> 
-
-                </tbody>
-        
-            </table>
-
-        </div>
-    </div>
-
-    <div align="right"><font size="5" color=Navy>Создание третьей таблицы</font>
-        <div>
-            <table width=45%>
-                <thead align="center">
-                    <tr>
-                        <td colspan="3">Одна ячейка на три столбца в THEAD</td>
-                    </tr>                    
-                </thead>
-                <tfoot align="center" style="background: hsl(226, 74%, 5%)">
-                    <tr>
-                        <td colspan="3" style="color: aliceblue;">Одна ячейка на три столбца в TFOOT</td>
-                    </tr> 
-                </tfoot>
-                
-                <tbody align="center">
-                    <tr>
-                        <td  rowspan="3">Одна ячейка на три строки в TBODY</td>
-                        <td>Ячейка 1.2 в TBODY</td> 
-                        <td>Ячейка 1.3 в TBODY</td> 
-                    </tr>  
-
-                    <tr>
-                        <td>Ячейка 2.2 в TBODY</td> 
-                        <td>Ячейка 2.3 в TBODY</td> 
-                    </tr> 
-
-                    <tr>
-                        <td>Ячейка 3.2 в TBODY</td> 
-                        <td>Ячейка 3.3 в TBODY</td> 
-                    </tr> 
-
-                </tbody>
-        
-            </table>
-        </div>
-
-    </div>
-    
-
-</body>
 </html>
