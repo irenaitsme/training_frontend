@@ -221,11 +221,11 @@ li{
 
 .inner-div-experience{
     margin: 0;
+    margin-right: 71px;
 }
 
 .inner-div-skills{
     margin: 0;
-    margin-left: 71px;
     display: flex;
     flex-wrap: wrap;
     width: 50%;
@@ -333,6 +333,9 @@ li{
 }
 
 .inner-div-education{
+    margin:0;
     margin-bottom: 41px;
+    padding-left: 460px;
+    width: 100%;
 }
 
