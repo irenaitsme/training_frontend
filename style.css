@@ -39,7 +39,8 @@
         
 .left_sidebar {
     background-color: #F7F7F7;
-    width: 469px;
+    width: 100%;
+    max-width: 469px;
     padding: 49px;
 }
 
@@ -222,7 +223,7 @@ li{
 .inner-div-experience{
     margin: 0;
     width: 100%;
-    max-width: 440px;
+    max-width: 450px;
 }
 
 .inner-div-skills{
@@ -341,3 +342,36 @@ li{
     max-width: 450px;
 }
 
+
+@media (max-width: 1000px) {
+    .background {
+        flex-wrap: wrap;
+        margin: 0;
+        min-width: 360px;
+        padding: 0;
+    }
+
+    .left_sidebar {
+        margin: 0;
+        padding: 24px;
+    }
+    .right-sidebar{
+        margin: 0;
+        padding: 24px;
+        width: 100%;
+    }
+
+    .div-image {
+        width: 226px;
+        margin-left: 65px;
+        order: 1;
+    }
+
+    .header {
+        order: 2;
+    }
+
+    .motto {
+        order: 3;
+    }
+}
