@@ -90,12 +90,13 @@ li{
 }
 
 .background{
-    display: flex;
+    display: grid;
+    grid-template-areas: "left_sidebar right-sidebar";
     padding-bottom: 37px;
     padding-left: 41px;
     padding-top: 37px;
 }
-        
+
 .left_sidebar {
     background-color: #F7F7F7;
     width: 100%;
@@ -133,14 +134,18 @@ li{
 
 .container {
     margin-top: 70px;
-    display: flex;
-    flex-wrap: wrap;
     width: 100%;
 }
 
+.container_strengths {
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
 .inner-div-info {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
     width: 100%;
     height: 30px;
     font-family: 'Avenir Next Cyr Bold';
@@ -157,6 +162,7 @@ li{
     font-style: italic;
     font-weight: 800;
     text-transform: none;
+    text-align: right;
 }
 
 .inner-div-strengths {
@@ -202,8 +208,8 @@ li{
 }
 
 .icon-container {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 65px 65px 65px;
     width: 100%;
     height: 45px;
 }
@@ -241,8 +247,10 @@ li{
 }
 
 .main{
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-areas: 
+        "inner-div-experience inner-div-skills"
+        ". inner-div-education";
     justify-content: space-between;
     margin: 0;
 }
@@ -255,15 +263,14 @@ li{
 
 .inner-div-skills{
     margin: 0;
-    display: flex;
-    flex-wrap: wrap;
     width: 100%;
     max-width: 450px;
-    height: 285px;
+    padding-bottom: 5px;
 }
 
-.inner-div-characteristics{
-    display: flex;
+.inner-div-characteristics {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
     justify-content: space-between;
     width: 100%;
     font-family: 'Avenir Next Cyr';
@@ -272,19 +279,24 @@ li{
     font-weight: 800;
     line-height: 18.38px;
     text-align: left;
+    margin-bottom: 3px;
+}
+
+.inner-div-characteristics .align_text_right {
+    text-align: right;
 }
 
 .inner-div-line{
     position: relative;
     width: 100%;
     height: 2px;
-    top: -5px;
     left: 3px;
     gap: 0px;
     border: 3px 0px 0px 0px;
     opacity: 0px;
     border: 3px solid #D2D2D2;
     box-align: center;
+    margin-bottom: 8px;
 }
 
 .inner-div-point{
@@ -328,10 +340,22 @@ li{
     max-width: 450px;
 }
 
+@media (max-width: 1510px) {
+    .main{
+        grid-template-areas: 
+        "inner-div-experience"
+        "inner-div-skills"
+        "inner-div-education";
+    }
+}
+
 
 @media (max-width: 1000px) {
     .background {
-        flex-wrap: wrap;
+        display: grid;
+        grid-template-areas: 
+        "left_sideba"
+        "right-sidebar";
         margin: 0;
         padding: 0;
     }
@@ -396,8 +420,8 @@ li{
     }
 
     .icon-container-mobile {
-        display: flex;
-        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: 65px 65px 65px;
         width: 100%;
         height: 45px;
     }
