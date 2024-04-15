@@ -99,7 +99,7 @@ li{
 
 .left_sidebar {
     background-color: #F7F7F7;
-    width: 100%;
+    width: calc(448px);
     padding: 49px;
 }
 
@@ -134,13 +134,9 @@ li{
 
 .container {
     margin-top: 70px;
+    display: flex;
+    flex-wrap: wrap;
     width: 100%;
-}
-
-.container_strengths {
-    margin-top: 70px;
-    display: grid;
-    grid-template-columns: auto auto auto;
 }
 
 .inner-div-info {
@@ -230,9 +226,10 @@ li{
 }
 
 .right-sidebar{
-    margin-left: 59px;
-    margin-top: 76px; 
-    margin-right: 70px;
+    width: 100%;
+    padding-left: 59px;
+    padding-top: 76px; 
+    padding-right: 70px;
 }
 
 .inner-div-about{
@@ -251,19 +248,20 @@ li{
     grid-template-areas: 
         "inner-div-experience inner-div-skills"
         ". inner-div-education";
-    justify-content: space-between;
     margin: 0;
+    width: calc(920px);
 }
 
 .inner-div-experience{
     margin: 0;
     width: 100%;
     max-width: 450px;
+    padding-right: 71px;
 }
 
 .inner-div-skills{
     margin: 0;
-    width: 100%;
+    width: calc(100%);
     max-width: 450px;
     padding-bottom: 5px;
 }

@@ -38,7 +38,7 @@
     box-sizing: border-box
 }
 
-h1{
+.header{
     width: 100%;
     height: 100%;
     font-family: 'Avenir Next Cyr Bold';
@@ -50,7 +50,7 @@ h1{
     margin-bottom: 88px;
 }
 
-h2{
+.subheader{
     width: 100%;
     height: 100%;
     font-family: 'Avenir Next Cyr';
@@ -62,7 +62,7 @@ h2{
     margin-bottom: 23px;
 }
 
-h3{
+.main_title{
     font-family: 'Avenir Next Cyr Bold';
     font-size: 25px;
     font-weight: 700;
@@ -74,7 +74,7 @@ h3{
     text-transform: uppercase;
 }
 
-ul{
+.font_list{
     padding-inline-start: 12px;
     font-family: 'Avenir Next Cyr';
     font-size: 20px;
@@ -85,8 +85,11 @@ ul{
     color: #181818;
 }
 
-li{
+.menu_point{
     margin-bottom: 23px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:column;
 }
 
 .background{
@@ -98,7 +101,7 @@ li{
         
 .left_sidebar {
     background-color: #F7F7F7;
-    width: 100%;
+    width: calc(448px);
     padding: 49px;
 }
 
@@ -115,7 +118,16 @@ li{
 }
 
 .header_mobile {
-    display: none;
+   display: none;
+   width: 100%;
+   height: 100%;
+   font-family: 'Avenir Next Cyr Bold';
+   font-size: 47px;
+   font-weight: 700;
+   line-height: 57.29px;
+   text-align: left;
+   color: #181818;
+   margin-bottom: 88px;
 }
 
 .motto {
@@ -243,7 +255,7 @@ li{
 .main{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    flex-direction: row;
     margin: 0;
 }
 
@@ -251,14 +263,22 @@ li{
     margin: 0;
     width: 100%;
     max-width: 450px;
+    padding-right: 71px;
+}
+
+.right-side-main{
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
 }
 
 .inner-div-skills{
     margin: 0;
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
     max-width: 450px;
+    width: 100%;
     height: 285px;
 }
 
@@ -301,6 +321,35 @@ li{
     align-self: center;
 }
 
+.menu-point-img{
+    position: relative;
+    width: 10px;
+    height: 10px;
+    top: 17px;
+    left: -20px;
+    gap: 0px;
+    border: 2px 0px 0px 0px;
+    opacity: 0px;
+    background: #7B7B7B;
+    border-radius: 50%;
+    align-self: left;
+}
+
+.submenu-point-img{
+    position: relative;
+    width: 10px;
+    height: 10px;
+    top: 17px;
+    left: -20px;
+    gap: 0px;
+    border: 2px 0px 0px 0px;
+    opacity: 0px;
+    background: #FFFFFF;
+    border-radius: 50%;
+    border: 0.1px solid black;
+    align-self: left;
+}
+
 .character{
     left: 75%;
 }
@@ -324,8 +373,8 @@ li{
 .inner-div-education{
     margin:0;
     margin-bottom: 41px;
-    width: 100%;
     max-width: 450px;
+    width: 100%;
 }
 
 
@@ -333,7 +382,7 @@ li{
     .background {
         flex-wrap: wrap;
         margin: 0;
-        padding: 0;
+        padding: 24px;
     }
 
     .left_sidebar {
@@ -342,7 +391,7 @@ li{
     }
     .right-sidebar{
         margin: 0;
-        padding: 24px;
+        padding: 0;
         width: 100%;
     }
 
@@ -358,9 +407,6 @@ li{
 
     .header_mobile {
         display: block;
-    }
-
-    h1 {
         text-align: center;
     }
 
@@ -376,11 +422,11 @@ li{
         font-size: 18px;
     }
 
-    ul {
+    .font_list {
         font-size: 17px;
     }
 
-    li {
+    .menu_point {
         font-size: 17px;
     }
 
@@ -400,5 +446,16 @@ li{
         flex-wrap: wrap;
         width: 100%;
         height: 45px;
+    }
+
+}
+
+@media (min-width: 2040px) {
+    .right-side-main{
+        flex-direction: row;
+    }
+
+    .inner-div-skills{
+        padding-right: 71px;
     }
 }
