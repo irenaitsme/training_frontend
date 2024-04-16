@@ -38,7 +38,7 @@
     box-sizing: border-box
 }
 
-h1{
+.header{
     width: 100%;
     height: 100%;
     font-family: 'Avenir Next Cyr Bold';
@@ -50,7 +50,7 @@ h1{
     margin-bottom: 88px;
 }
 
-h2{
+.subheader{
     width: 100%;
     height: 100%;
     font-family: 'Avenir Next Cyr';
@@ -62,7 +62,7 @@ h2{
     margin-bottom: 23px;
 }
 
-h3{
+.main_title{
     font-family: 'Avenir Next Cyr Bold';
     font-size: 25px;
     font-weight: 700;
@@ -74,7 +74,7 @@ h3{
     text-transform: uppercase;
 }
 
-ul{
+.font_list{
     padding-inline-start: 12px;
     font-family: 'Avenir Next Cyr';
     font-size: 20px;
@@ -85,8 +85,11 @@ ul{
     color: #181818;
 }
 
-li{
+.menu_point{
     margin-bottom: 23px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:column;
 }
 
 .background{
@@ -99,7 +102,7 @@ li{
 
 .left_sidebar {
     background-color: #F7F7F7;
-    width: calc(448px);
+    max-width: 448px;
     padding: 49px;
 }
 
@@ -117,6 +120,15 @@ li{
 
 .header_mobile {
     display: none;
+    width: 100%;
+    height: 100%;
+    font-family: 'Avenir Next Cyr Bold';
+    font-size: 47px;
+    font-weight: 700;
+    line-height: 57.29px;
+    text-align: left;
+    color: #181818;
+    margin-bottom: 88px;
 }
 
 .motto {
@@ -226,10 +238,9 @@ li{
 }
 
 .right-sidebar{
-    width: 100%;
-    padding-left: 59px;
-    padding-top: 76px; 
-    padding-right: 70px;
+    margin-left: 59px;
+    margin-top: 76px; 
+    margin-right: 70px;
 }
 
 .inner-div-about{
@@ -246,10 +257,9 @@ li{
 .main{
     display: grid;
     grid-template-areas: 
-        "inner-div-experience inner-div-skills"
-        ". inner-div-education";
+        "inner-div-experience right-side-main";
     margin: 0;
-    width: calc(920px);
+    width: 100%;
 }
 
 .inner-div-experience{
@@ -261,14 +271,15 @@ li{
 
 .inner-div-skills{
     margin: 0;
-    width: calc(100%);
+    width: 100%;
     max-width: 450px;
+    min-width: 360px;
     padding-bottom: 5px;
 }
 
 .inner-div-characteristics {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 1fr;
     justify-content: space-between;
     width: 100%;
     font-family: 'Avenir Next Cyr';
@@ -311,6 +322,35 @@ li{
     align-self: center;
 }
 
+.menu-point-img{
+    position: relative;
+    width: 10px;
+    height: 10px;
+    top: 17px;
+    left: -20px;
+    gap: 0px;
+    border: 2px 0px 0px 0px;
+    opacity: 0px;
+    background: #7B7B7B;
+    border-radius: 50%;
+    align-self: left;
+}
+
+.submenu-point-img{
+    position: relative;
+    width: 10px;
+    height: 10px;
+    top: 17px;
+    left: -20px;
+    gap: 0px;
+    border: 2px 0px 0px 0px;
+    opacity: 0px;
+    background: #FFFFFF;
+    border-radius: 50%;
+    border: 0.1px solid black;
+    align-self: left;
+}
+
 .character{
     left: 75%;
 }
@@ -344,28 +384,34 @@ li{
         "inner-div-experience"
         "inner-div-skills"
         "inner-div-education";
+        width: calc(1920px/1510px - 100%);
     }
 }
 
 
-@media (max-width: 1000px) {
+@media (max-width: 1150px) {
     .background {
         display: grid;
         grid-template-areas: 
-        "left_sideba"
+        "left_sidebar"
         "right-sidebar";
         margin: 0;
-        padding: 0;
+        padding: 24px;
     }
 
     .left_sidebar {
         margin: 0;
         padding: 24px;
+        max-width: 1150px;
     }
     .right-sidebar{
         margin: 0;
-        padding: 24px;
+        padding: 0;
         width: 100%;
+    }
+
+    .main{
+        width: calc(1920px/1150px - 100%);
     }
 
     .div-image {
@@ -380,9 +426,6 @@ li{
 
     .header_mobile {
         display: block;
-    }
-
-    h1 {
         text-align: center;
     }
 
@@ -398,11 +441,11 @@ li{
         font-size: 18px;
     }
 
-    ul {
+    .font_list {
         font-size: 17px;
     }
 
-    li {
+    .menu_point {
         font-size: 17px;
     }
 
@@ -422,5 +465,23 @@ li{
         grid-template-columns: 65px 65px 65px;
         width: 100%;
         height: 45px;
+    }
+}
+
+@media (min-width: 2040px) {
+    .main{
+        grid-template-areas: 
+        "inner-div-experience right-side-main";
+        justify-content: start;
+    }
+
+    .inner-div-skills{
+        padding-right: 71px;
+    }
+
+    .right-side-main{
+        display: grid;
+        grid-template-areas: 
+        "inner-div-skills inner-div-education"
     }
 }
