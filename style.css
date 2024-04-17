@@ -378,16 +378,18 @@
 }
 
 
-@media (max-width: 1000px) {
+@media (max-width: 1150px) {
     .background {
         flex-wrap: wrap;
         margin: 0;
         padding: 24px;
+        justify-content: center;
     }
 
     .left_sidebar {
         margin: 0;
         padding: 24px;
+        width: 100%;
     }
     .right-sidebar{
         margin: 0;
