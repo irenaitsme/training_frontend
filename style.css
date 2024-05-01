@@ -40,11 +40,10 @@
 
 .header{
     width: 100%;
-    height: 100%;
     font-family: 'Avenir Next Cyr Bold';
     font-size: 97px;
     font-weight: 700;
-    line-height: 118.24px;
+    line-height: 118.25px;
     text-align: left;
     color: #181818;
     margin-bottom: 88px;
@@ -52,11 +51,10 @@
 
 .subheader{
     width: 100%;
-    height: 100%;
     font-family: 'Avenir Next Cyr';
     font-size: 25px;
     font-weight: 700;
-    line-height: 30.63px;
+    line-height: 30.5px;
     text-align: left;
     text-transform: uppercase;
     margin-bottom: 23px;
@@ -66,7 +64,7 @@
     font-family: 'Avenir Next Cyr Bold';
     font-size: 25px;
     font-weight: 700;
-    line-height: 30.63px;
+    line-height: 30.5px;
     text-align: left;
     margin: 0;
     margin-top: 39px;
@@ -101,7 +99,7 @@
         
 .left_sidebar {
     background-color: #F7F7F7;
-    width: calc(448px);
+    width: calc(448px / 930px * 100%);
     padding: 49px;
 }
 
@@ -120,11 +118,10 @@
 .header_mobile {
    display: none;
    width: 100%;
-   height: 100%;
    font-family: 'Avenir Next Cyr Bold';
    font-size: 47px;
    font-weight: 700;
-   line-height: 57.29px;
+   line-height: 57.25px;
    text-align: left;
    color: #181818;
    margin-bottom: 88px;
@@ -138,7 +135,7 @@
     font-size: 25px;
     font-style: italic;
     font-weight: 400;
-    line-height: 30.63px;
+    line-height: 30.5px;
     text-align: center;
     color: #7B7B7B;
 }
@@ -193,7 +190,7 @@
     font-family: 'Avenir Next Cyr';
     font-size: 22px;
     font-weight: 700;
-    line-height: 26.95px;
+    line-height: 27px;
     text-align: left;
     text-transform: uppercase;
 }
@@ -208,7 +205,7 @@
     font-family: 'Avenir Next Cyr';
     font-size: 22px;
     font-weight: 700;
-    line-height: 26.95px;
+    line-height: 27px;
     text-align: left;
     text-transform: uppercase;
 }
@@ -223,7 +220,7 @@
 .inner-div-icons {
     display:block;
     margin: 0;
-    margin-right: 25px;
+    padding-right: 25px;
 }
 
 .icon-container-mobile {
@@ -247,7 +244,7 @@
     font-size: 22px;
     font-style: italic;
     font-weight: 800;
-    line-height: 26.95px;
+    line-height: 27px;
     text-align: left;
     text-indent: 40px;
 }
@@ -290,7 +287,7 @@
     font-size: 15px;
     font-style: italic;
     font-weight: 800;
-    line-height: 18.38px;
+    line-height: 18.25px;
     text-align: left;
 }
 
@@ -377,6 +374,19 @@
     width: 100%;
 }
 
+@media (max-width: 1518px) {
+    .inner-div-experience{
+        max-width: 900px;
+    }
+
+    .inner-div-skills{
+        max-width: 900px;
+    }
+
+    .inner-div-education{
+        max-width: 900px;
+    }
+}
 
 @media (max-width: 1150px) {
     .background {
@@ -426,6 +436,7 @@
 
     .font_list {
         font-size: 17px;
+        justify-content: space-between;
     }
 
     .menu_point {
@@ -435,12 +446,18 @@
     .inner-div-kontacts {
         margin-top: 21px;
         margin-bottom: 8px;
+        text-align: center;
     }
 
     .inner-div-kontacts-mobile {
         display: block;
         margin-top: 18px;
         margin-bottom: 8px;
+        text-align: center;
+    }
+
+    .icon-container{
+        justify-content: center;
     }
 
     .icon-container-mobile {
@@ -448,8 +465,24 @@
         flex-wrap: wrap;
         width: 100%;
         height: 45px;
+        justify-content: center;
     }
 
+    .inner-div-icons{
+        padding-inline: 13px;
+    }
+
+    .inner-div-experience{
+        max-width: 1150px;
+    }
+
+    .inner-div-skills{
+        max-width: 1150px;
+    }
+
+    .inner-div-education{
+        max-width: 1150px;
+    }
 }
 
 @media (min-width: 2040px) {
