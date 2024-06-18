@@ -248,9 +248,13 @@ body{
     justify-content: space-between;
     margin-top: 123.89px;
     height: 36.11px;
-    width: 110%;
+    width: 100%;
     position: relative;
     right: 70px;
+}
+
+.inner_partner_images{
+    padding-right: 99px;
 }
 
 .more_about_us{
@@ -393,9 +397,6 @@ body{
     text-decoration-thickness: 4px;
 }
 
-.inner_our_features_content{
-    
-}
 
 .inner_our_features_content_blog_content{
     display: flex;
@@ -516,4 +517,64 @@ body{
     position: relative;
     top: -5px;
     left: 120px;
+}
+
+.say_goodbye_block{
+    margin: 0 auto;
+    margin-top: 135px;
+}
+.inner_say_goodbye_block_images{
+    width: 100%;
+    height: 985px;
+}
+
+.sphere_up{
+    position: relative;
+    top: -990px;
+    width: 100%;
+    height: 500px;
+    background: #160647;
+    border-radius: 0 0 50% 50% / 0 0 100% 100%;
+}
+.sphere_down{
+    position: relative;
+    top: -1000px;
+    width: 100%;
+    height: 500px;
+    background: #160647;
+    border-radius: 50% 50% 0 0 / 100% 100% 0 0;
+}
+
+.say_goodbye_block_text{
+    width: 859px;
+    margin-left: 291px;
+    font-family: 'Inter-Bold';
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 93.5px;
+    text-align: center;
+    color: #FFFFFF;
+    text-decoration: underline;
+    text-decoration-color: #251c7b;
+    text-underline-offset: 13px;
+    text-decoration-style: solid;
+    text-decoration-thickness: 5px;
+    position: relative;
+    top: -1860px;
+
+    .say_goodbye_block_text_white{
+        color: #FFFFFF;
+        text-decoration: underline;
+        text-underline-offset: 13px;
+        text-decoration-style: solid;
+        text-decoration-thickness: 5px;
+    }
+
+    .say_goodbye_block_text_red{
+        color: #F22E52;
+        text-decoration: underline;
+        text-underline-offset: 13px;
+        text-decoration-style: solid;
+        text-decoration-thickness: 5px;
+    }
 }
