@@ -254,7 +254,7 @@ body{
 }
 
 .inner_partner_images{
-    padding-right: 99px;
+    padding-right: 99px;   
 }
 
 .more_about_us{
@@ -571,4 +571,116 @@ body{
         text-decoration-style: solid;
         text-decoration-thickness: 5px;
     }
+}
+
+.account{
+    position: relative;
+    top: -1476px;
+    padding-left: 584px;
+    width: 100%;
+    font-family: 'Inter-Regular';
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: #FFFFFF;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    text-decoration-style: solid;
+    text-decoration-thickness: 1px;
+}
+
+.inner_account{
+    display: flex;
+    flex-direction: column;
+}
+
+.inner_account_button_white_img{
+    width: 15px;
+    height: 15px;
+    margin-top: 5px;
+    margin-right: 11px;
+    margin-left: 15px;
+}
+
+.inner_account_button_white_text{
+    margin-top: 5px;
+    font-family: 'Inter-Regular';
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: #160647;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    text-decoration-style: solid;
+    text-decoration-thickness: 1px;
+}
+
+.inner_account_button_white{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    position: relative;
+    top: -1446px;
+    margin-left: 510px;
+    width: 197px;
+    height: 45px;
+    border-radius: 50px 50px 50px 50px;
+    background: #FFFFFF;
+}
+
+.inner_account_button_blue{
+    align-items: center;
+    justify-content: left;
+    position: relative;
+    top: -1510px;
+    margin-left: 747px;
+    padding-left: 47px;
+    padding-top: 15px;
+    width: 193px;
+    height: 45px;
+    border-radius: 50px 50px 50px 50px;
+    background: #47BEBA;
+    font-family: 'Inter-Regular';
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: #FFFFFF;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    text-decoration-style: solid;
+    text-decoration-thickness: 1px;
+}
+
+.inner_account_text{
+    position: relative;
+    top: -1477px;
+    color: #7A8994;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    text-decoration-style: solid;
+    text-decoration-thickness: 1px;
+    padding-left: 720px;
+}
+
+.inner_account_no_card_text{
+    position: relative;
+    top: -1483px;
+    color: #7A8994;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    text-decoration-style: solid;
+    text-decoration-thickness: 1px;
+    padding-left: 644px;
+    font-family: 'Inter-Regular';
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 17px;
+    text-align: left;
 }
