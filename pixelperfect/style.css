@@ -522,30 +522,30 @@ body{
 .say_goodbye_block{
     margin: 0 auto;
     margin-top: 135px;
-}
-.inner_say_goodbye_block_images{
+    background-image: url("./images/img_goodbye.png");
+    background-size: cover;
     width: 100%;
-    height: 985px;
+    height: 975px;
 }
 
+
 .sphere_up{
-    position: relative;
-    top: -990px;
     width: 100%;
     height: 500px;
     background: #160647;
     border-radius: 0 0 50% 50% / 0 0 100% 100%;
 }
 .sphere_down{
-    position: relative;
-    top: -1000px;
     width: 100%;
     height: 500px;
     background: #160647;
     border-radius: 50% 50% 0 0 / 100% 100% 0 0;
 }
 
+
 .say_goodbye_block_text{
+    position: relative;
+    top: -868px;
     width: 859px;
     margin-left: 291px;
     font-family: 'Inter-Bold';
@@ -553,8 +553,6 @@ body{
     font-weight: 700;
     line-height: 93.5px;
     text-align: center;
-    position: relative;
-    top: -1860px;
 
     .say_goodbye_block_text_white{
         color: #FFFFFF;
@@ -572,10 +570,11 @@ body{
         text-decoration-thickness: 5px;
     }
 }
-
-.account{
+.say_goodbye_block_account{
     position: relative;
-    top: -1476px;
+    top: -487px;
+}
+.account{
     padding-left: 584px;
     width: 100%;
     font-family: 'Inter-Regular';
@@ -610,7 +609,7 @@ body{
     font-size: 14px;
     font-weight: 500;
     line-height: 17px;
-    letter-spacing: 0.02em;
+    letter-spacing: 0.03em;
     text-align: left;
     color: #160647;
     text-decoration: underline;
@@ -624,9 +623,8 @@ body{
     flex-direction: row;
     align-items: center;
     justify-content: left;
-    position: relative;
-    top: -1446px;
-    margin-left: 510px;
+    margin-left: 509px;
+    margin-top: 30px;
     width: 197px;
     height: 45px;
     border-radius: 50px 50px 50px 50px;
@@ -636,10 +634,9 @@ body{
 .inner_account_button_blue{
     align-items: center;
     justify-content: left;
-    position: relative;
-    top: -1510px;
     margin-left: 747px;
-    padding-left: 47px;
+    margin-top: -63px;
+    padding-left: 46px;
     padding-top: 15px;
     width: 193px;
     height: 45px;
@@ -649,38 +646,140 @@ body{
     font-size: 14px;
     font-weight: 500;
     line-height: 17px;
-    letter-spacing: 0.02em;
+    letter-spacing: 0.03em;
     text-align: left;
     color: #FFFFFF;
     text-decoration: underline;
-    text-underline-offset: 3px;
+    text-underline-offset: 2px;
     text-decoration-style: solid;
     text-decoration-thickness: 1px;
 }
 
 .inner_account_text{
-    position: relative;
-    top: -1477px;
     color: #7A8994;
     text-decoration: underline;
     text-underline-offset: 3px;
     text-decoration-style: solid;
     text-decoration-thickness: 1px;
-    padding-left: 720px;
+    padding-left: 719px;
+    position: relative;
+    top: -31px;
 }
 
 .inner_account_no_card_text{
-    position: relative;
-    top: -1483px;
     color: #7A8994;
     text-decoration: underline;
     text-underline-offset: 3px;
     text-decoration-style: solid;
     text-decoration-thickness: 1px;
-    padding-left: 644px;
+    padding-left: 643px;
     font-family: 'Inter-Regular';
     font-size: 14px;
     font-weight: 600;
     line-height: 17px;
     text-align: left;
+    position: relative;
+    top: 26px;
+}
+
+.our_client_says{
+    width: 498px;
+    height: 126px;
+    font-family: 'Inter-Bold';
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 63px;
+    text-align: center;
+    color: #160647;
+    margin-top: 161px;
+    margin-left: 470px;
+    letter-spacing: 0.005em;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-style: solid;
+    text-decoration-thickness: 3px;
+}
+
+.assistant_card{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.assistant_card_inner{
+    display: flex;
+    flex-direction: row;
+    border: 1px solid #F1F1F1;
+    border-radius: 5px 5px 5px 5px;
+    width: 400px;
+    height: 233px;
+    padding-top: 52px;
+    padding-left: 31px;
+    padding-right: 30px;
+
+    .assistant_card_img{
+        width: 41px;
+        height: 43px;
+        margin-right: 15px;
+        margin-top: 3px;
+    }
+
+    .assistant_card_text_header{
+        font-family: 'Inter-Bold';
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 24.2px;
+        text-align: left;
+        color: #160647;
+        text-decoration: underline;
+        text-underline-offset: 4px;
+        text-decoration-style: solid;
+        text-decoration-thickness: 1px;
+    }
+    
+    .assistant_card_text_subheader{
+        font-family: 'Inter-Regular';
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 18.15px;
+        text-align: left;
+        text-decoration: underline;
+        text-underline-offset: 4px;
+        text-decoration-style: solid;
+        text-decoration-thickness: 1px;
+        color: #7A8994;
+        margin-top: 5px;
+
+    }
+
+    .assistant_card_text_footer{
+        width: 339px;
+        font-family: 'Inter-Regular';
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19.36px;
+        letter-spacing: 0.02em;
+        text-align: left;
+        color: #7A8994;
+        text-decoration: underline;
+        text-underline-offset: 4px;
+        text-decoration-style: solid;
+        text-decoration-thickness: 1px;
+        margin-left: -60px;
+        margin-top: 24px;
+    }
+}
+
+.assistant_card_left{
+    width: 114px;
+    margin-left: 341px;
+    margin-right: 66px;
+    margin-top: 9px;
+}
+
+.assistant_card_right{
+    width: 114px;
+    margin-left: 67px;
+    margin-top: 2px;
 }
